@@ -1,0 +1,29 @@
+// Place all the styles related to the blogs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.container {
+  .header {
+    border: none;
+    h1 {
+      font-size: 45px;
+    }
+  }
+}
+
+ul {
+  list-style: none;
+
+}
+.body-text{
+  input[type='text'] {
+    width: 500px;
+    height: 300px;
+  }
+}
+.field_with_errors {
+  display: inline-block;
+  input {
+    border: 1px solid red;
+  }
+}

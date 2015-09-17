@@ -1,0 +1,15 @@
+<div class="container">
+  <h1>Your blog posts</h1>
+
+  <ul>
+    <% @blogs.each do |blog| %>
+      <li><%= link_to blog.title, "/blogs/#{blog.id}" %></li>
+    <% end %>
+  </ul>
+
+  <%= link_to new_blog_path do %>
+    <button type="button" class="btn btn-default btn-md">
+      <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add new post
+    </button>
+  <% end %>
+</div>

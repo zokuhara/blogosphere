@@ -1,0 +1,28 @@
+<div class="container">
+  <h1>Post a new blog</h1>
+
+  <%= form_for @blog  do |f| %>
+
+
+    <div>
+      <%= f.label :title %>
+      <%= f.text_field :title %><em><%= @blog.errors[:title].join(", ") %></em>
+    </div>
+
+    <div class="body-text">
+      <%= f.label :body %>
+      <%= f.text_field :body %><em><%= @blog.errors[:body].join(", ") %></em>
+    </div>
+
+    <div>
+      <%= f.submit %>
+    </div>
+
+  <% end %>
+
+  <%= link_to root_path do %>
+    <button type="button" class="btn btn-default btn-md">
+      <span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home
+    </button>
+  <% end %>
+</div>
